@@ -6,20 +6,34 @@ function descuento() {
 
     let ingresarNumero = parseInt(prompt("Ingrese el monto del producto: "))
 
-    let opcion = prompt('Buenos días Ingerese la opcion deseada : \n Opcion 1 (15% de descuento) \n Opcion 2 (25% de descuento) \n Opcion 3 (30% de descuento) \n \n Sino aplica descuento elija la opcion 4'  )
+    let cuotas = prompt('Elija la opcion deseada \n  1) 3 cuotas un interes del 15 % \n  2) 6 cuotas un interes del 20 ')
+
+    
+ if (cuotas == 1) {
+    resultadoInteres = (ingresarNumero * 0.10)
+    resultadoFianlInteres = resultadoInteres + ingresarNumero
+
+    alert('Sera en 6 cuotas y el precio final sera de ' + resultadoFianlInteres)
+ }  else {
+        alert("se abonara en 1 cuota" + ingresarNumero )
+
+    }
+
+
+let opcion = prompt('Buenos días Ingerese la opcion deseada : \n 1) (10% de descuento) \n 2) (15% de descuento) \n 3) (25% de descuento) \n \n Sino aplica descuento elija la opcion 4'  )
 
  if (opcion == 1) {
-    resultado = ingresarNumero * (15 / 100)
+    resultadoDescuento = resultadoFianlInteres * 0.10
  } else { 
      if (opcion == 2) {
-        resultado = ingresarNumero * (25 / 100) 
+        resultadoDescuento = resultadoFianlInteres * 0.15
 
      }  else  {
         if (opcion == 3) {
-            resultado = ingresarNumero * (30 / 100) 
+            resultadoDescuento = resultadoFianlInteres * 0.25
          
     } else {
-        alert("no se aplicara nigun descuento:  \n El precio final a pagar es de : " + ingresarNumero )
+        alert("no se aplicara nigun descuento:  \n El precio final a pagar es de : " + resultadoFianlInteres )
     }
     
      }
@@ -28,9 +42,12 @@ function descuento() {
  }
 
 
- alert("El precio final es de :" + (ingresarNumero - resultado) )
+ alert("El precio final es de :" + (resultadoFianlInteres-200 resultadoDescuento) )
 
 }
+
+
+
 
 descuento();
 
@@ -64,6 +81,44 @@ descuento();
 //  resultado = (ingresarNumero * (ingresarDescuento /100))
 
 //  alert("El precio final es de :" + ( ingresarNumero - resultado))
+
+// }
+
+// descuento();
+
+
+
+
+
+                                            // este codido funciona correctamente
+
+// function descuento() {
+
+//     let ingresarNumero = parseInt(prompt("Ingrese el monto del producto: "))
+
+//     let opcion = prompt('Buenos días Ingerese la opcion deseada : \n Opcion 1 (15% de descuento) \n Opcion 2 (25% de descuento) \n Opcion 3 (30% de descuento) \n \n Sino aplica descuento elija la opcion 4'  )
+
+//  if (opcion == 1) {
+//     resultado = ingresarNumero * (15 / 100)
+//  } else { 
+//      if (opcion == 2) {
+//         resultado = ingresarNumero * (25 / 100) 
+
+//      }  else  {
+//         if (opcion == 3) {
+//             resultado = ingresarNumero * (30 / 100) 
+         
+//     } else {
+//         alert("no se aplicara nigun descuento:  \n El precio final a pagar es de : " + ingresarNumero )
+//     }
+    
+//      }
+  
+     
+//  }
+
+
+//  alert("El precio final es de :" + (ingresarNumero - resultado) )
 
 // }
 
