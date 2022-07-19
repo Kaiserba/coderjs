@@ -1,4 +1,10 @@
+
+
+
+
 function descuento() {
+
+    let opcion = prompt('Buenos días Ingerese la opcion deseada : \n opcion 1 (15% de descuento) \n opcion 2 (25% de descuento) \n opcion 1 (30% de descuento)')
 
  let ingresarNumero = prompt("Ingrese un numero: ")
  let ingresarDescuento = prompt("Ingresar descuento: ")
