@@ -42,7 +42,7 @@ let opcion = prompt('Buenos días Ingerese la opcion deseada : \n 1) (10% de des
  }
 
 
- alert("El precio final es de :" + (resultadoFianlInteres-200 resultadoDescuento) )
+ alert("El precio final es de :" + (resultadoFianlInteres- resultadoDescuento) )
 
 }
 
