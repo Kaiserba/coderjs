@@ -1,4 +1,18 @@
 
+function seleccionProducto (){
+   let listaDeProdcutos = prompt('Selecione Prodcutos \n 1)Pantalon jean \n 2)Remera Basica \n 3)Short liso \n 4)Bermuda Cargo ')
+   if (listaDeProdcutos == 1)
+
+   var capturarProdcuto = alert('Pantalon de Jean')
+}
+
+seleccionProducto();
+
+
+
+
+
+
 
 
 
@@ -13,9 +27,15 @@ function descuento() {
     resultadoInteres = (ingresarNumero * 0.10)
     resultadoFianlInteres = resultadoInteres + ingresarNumero
 
-    alert('Sera en 6 cuotas y el precio final sera de ' + resultadoFianlInteres)
- }  else {
-        alert("se abonara en 1 cuota" + ingresarNumero )
+    alert('Sera en 3 cuotas y el precio final sera de ' + resultadoFianlInteres)
+ } else if (cuotas == 2) {
+        resultadoInteres = (ingresarNumero * 0.20)
+        resultadoFianlInteres = resultadoInteres + ingresarNumero
+    
+        alert('Sera en 6 cuotas y el precio final sera de ' + resultadoFianlInteres)
+     }
+  else {
+        alert("se abonara en 1 cuota " + ingresarNumero )
 
     }
 
@@ -42,7 +62,7 @@ let opcion = prompt('Buenos días Ingerese la opcion deseada : \n 1) (10% de des
  }
 
 
- alert("El precio final es de :" + (resultadoFianlInteres- resultadoDescuento) )
+ alert("El precio final es de :" + (resultadoFianlInteres- resultadoDescuento) +)
 
 }
 
