@@ -1,12 +1,17 @@
+ function seleccionProducto (){
 
-function seleccionProducto (){
+
+
    let listaDeProdcutos = prompt('Selecione Prodcutos \n 1)Pantalon jean \n 2)Remera Basica \n 3)Short liso \n 4)Bermuda Cargo ')
+
+    const productos = [
+      {id:1, nombre: 'pelota', precio: 6500},
+      {id:2, nombre: 'short', precio: 3500},
+      {id:3, nombre: 'remera', precio: 7500}   ]
+
    if (listaDeProdcutos == 1)
-
-   var capturarProdcuto = alert('Pantalon de Jean')
-}
-
-seleccionProducto();
+    var capturarProdcuto = alert('Pantalon de Jean') }
+ seleccionProducto();
 
 
 
@@ -62,7 +67,7 @@ let opcion = prompt('Buenos días Ingerese la opcion deseada : \n 1) (10% de des
  }
 
 
- alert("El precio final es de :" + (resultadoFianlInteres- resultadoDescuento) +)
+ alert("El precio final es de :" + (resultadoFianlInteres- resultadoDescuento) )
 
 }
 
