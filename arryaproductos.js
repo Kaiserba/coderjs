@@ -53,10 +53,7 @@ let opcion = prompt('Buenos días Ingerese la opcion deseada : \n 1) (10% de des
      }  else  {
         if (opcion == 3) {
             resultadoDescuento = resultadoFianlInteres * 0.25
-         
-    } else {
-        alert("no se aplicara nigun descuento:  \n El precio final a pagar es de : " + resultadoFianlInteres )
-    }
+
     
      }
   
