@@ -22,9 +22,12 @@ arrayofObjects.forEach(object =>{
 
 });
 
-    
 
-    let ingresarNumero = arrayofObjects["precio"]
+
+
+};
+
+    let ingresarNumero = alert("El id ingresado es ?")
     
 
     let cuotas = prompt('Elija la opcion deseada \n  1) 3 cuotas un interes del 15 % \n  2) 6 cuotas un interes del 20 ')
@@ -71,7 +74,7 @@ let opcion = prompt('Buenos días Ingerese la opcion deseada : \n 1) (10% de des
 
  alert("El precio final es de :" + (resultadoFianlInteres - resultadoDescuento) )
 
-}
+
 
 
 descuento();
