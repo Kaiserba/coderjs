@@ -13,7 +13,7 @@
 <form action="">
     <input id="nombre" type="text" placeholder="Ingrese nombre" class="form-control my-2">
     <input id="precio" type="number" placeholder="Ingrese precio" class="form-control my-2">
-    <input id="stock" type="number" placeholder="Ingrese stock" class="form-control my-2">
+    <input id="cantidad" type="number" placeholder="Ingrese la cantidad" class="form-control my-2">
     <button id="boton" class="btn btn-success" type="reset" onclick="capturar();">Agregar </button>
 </form>
 
@@ -23,8 +23,9 @@
         <thead class="thead-inverse">
             <tr>
                 <th>Nombre</th>
-                <th>Precio</th>
-                <th>Stock</th>
+                <th>Precio por unidad</th>
+                <th>Precio Final</th>
+                <th>Cantidad </th>
             </tr>
         </thead>
        
@@ -37,10 +38,10 @@
             // console.log("capturado")
 
 
-            function producto(nombre,precio,stock){
+            function producto(nombre,precio,cantidad){
                 this.nombre=nombre;
                 this.precio=precio;
-                this.stock=stock;
+                this.cantidad=cantidad;
             }
 
             var nombreCapturar = document.getElementById("nombre").value;
@@ -50,10 +51,10 @@
           var precioCapturar = document.getElementById("precio").value;
           console.log(precioCapturar)
 
-          var stockCapturar = document.getElementById("stock").value;
-          console.log(stockCapturar)
+          var cantidadCapturar = document.getElementById("cantidad").value;
+          console.log(cantidadCapturar)
           
-          nuevoProducto = new producto(nombreCapturar,precioCapturar,stockCapturar);
+          nuevoProducto = new producto(nombreCapturar,precioCapturar,cantidadCapturar);
           console.log(nuevoProducto);
           agregar();
           
@@ -63,9 +64,42 @@
           function  agregar(){
              baseDatos.push(nuevoProducto);
              console.log(baseDatos);
-             document.getElementById("tabla").innerHTML += '<tbody><td>'+nuevoProducto.nombre+'</td><td>$'+nuevoProducto.precio+'</td><td>'+nuevoProducto.stock+'</td></tbody>';
          
-            };
+           alert('el precio es ' + nuevoProducto.precio)
+
+           let precio1 = nuevoProducto.precio
+          
+    let opcion = prompt('Buenos días Ingerese la opcion deseada : \n 1) (10% de descuento) \n 2) (15% de descuento) \n 3) (25% de descuento) \n \n Sino aplica descuento elija la opcion 4'  )
+    
+    if (opcion == 1) {
+       resultadoDescuento = precio1 * 0.10
+       resultadoFinal = (nuevoProducto.precio - resultadoDescuento)
+    } else { 
+        if (opcion == 2) {
+           resultadoDescuento = precio1 * 0.15
+           resultadoFinal = (nuevoProducto.precio - resultadoDescuento)
+   
+        }  else  {
+           if (opcion == 3) {
+               resultadoDescuento = precio1 * 0.25
+               resultadoFinal = (nuevoProducto.precio - resultadoDescuento)
+            
+       } else {
+
+           alert("no se aplicara nigun descuento:  \n El precio final a pagar es de : " + (precio1*nuevoProducto.cantidad ))
+           document.getElementById("tabla").innerHTML += '<tbody><td>'+nuevoProducto.nombre+'</td><td>'+precio1+'</td><td>$'+ (precio1 * nuevoProducto.cantidad) +'</td><td>'+nuevoProducto.cantidad+'</td></tbody>';
+
+       }
+  
+    }
+
+  
+     
+        
+    }
+    document.getElementById("tabla").innerHTML += '<tbody><td>'+nuevoProducto.nombre+'</td><td>'+precio1+'</td><td>$'+ ( resultadoFinal* nuevoProducto.cantidad) +'</td><td>'+nuevoProducto.cantidad+'</td></tbody>';
+                                         
+};
 
         
 
