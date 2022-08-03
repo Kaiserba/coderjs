@@ -2,6 +2,8 @@ const carrito = document.querySelector("#carrito");
 const template = document.querySelector("#template");
 const fragment = document.createDocumentFragment();
 const agregar = document.querySelectorAll(".card button");
+const restar = document.querySelector(".btn-danger");
+
 
 const carritoObjeto = {};
 
@@ -25,6 +27,32 @@ const agregarCarrito = (e) => {
 };
 
 agregar.forEach((boton) => boton.addEventListener("click", agregarCarrito));
+
+
+
+
+const restarCarrito = (e) => {
+    // console.log(e.target.dataset);
+    // console.log(e.target.dataset.fruta);
+
+    const producto = {
+        titulo: e.target.dataset.fruta,
+        id: e.target.dataset.fruta,
+        cantidad: 1,
+    };
+
+    if (carritoObjeto.hasOwnProperty(producto.id)) {
+        producto.cantidad = carritoObjeto[producto.id].cantidad - 1;
+    }
+
+    carritoObjeto[producto.id] = producto;
+
+    pintarCarrito();
+};
+
+
+
+
 
 const pintarCarrito = () => {
     carrito.textContent = "";
