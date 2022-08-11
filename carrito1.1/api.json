@@ -1,38 +1,38 @@
 [
   {
-    "precio": 500,
+    "precio": 6000,
     "id": 1,
-    "title": "Café",
-    "thumbnailUrl": "https://picsum.photos/id/0/600"
+    "title": "Conjunto 1",
+    "thumbnailUrl": "https://i.pinimg.com/736x/34/61/a5/3461a57e9cea80162b95850cf4330cda.jpg"
   },
   {
-    "precio": 100000,
+    "precio": 10000,
     "id": 2,
-    "title": "Pizza",
-    "thumbnailUrl": "https://picsum.photos/id/10/600"
+    "title": "Conjunto 2",
+    "thumbnailUrl": "https://i.pinimg.com/564x/f4/bb/2c/f4bb2cffcff34b0cdb2b9616d8629d6b.jpg"
   },
   {
-    "precio": 100,
+    "precio": 5000,
     "id": 3,
-    "title": "Agua",
-    "thumbnailUrl": "https://picsum.photos/id/20/600"
+    "title": "Camisa",
+    "thumbnailUrl": "https://i.pinimg.com/564x/0a/76/f9/0a76f9dac14165d46b7abf3638d93425.jpg"
   },
   {
-    "precio": 50,
+    "precio": 3500,
     "id": 4,
-    "title": "Sandía",
-    "thumbnailUrl": "https://picsum.photos/id/30/600"
+    "title": "Buzo Adidas",
+    "thumbnailUrl": "https://i.pinimg.com/564x/19/07/2f/19072facf97e25b0e836cd3d9e01d88d.jpg"
   },
   {
-    "precio": 10,
+    "precio": 7500,
     "id": 5,
-    "title": "Mango",
-    "thumbnailUrl": "https://picsum.photos/id/40/600"
+    "title": "Remera Adida rallas",
+    "thumbnailUrl": "https://i.pinimg.com/564x/34/f5/4e/34f54e1647794be19edf5292dbf6ea10.jpg"
   },
   {
-    "precio": 150,
+    "precio": 5200,
     "id": 6,
-    "title": "Chela",
-    "thumbnailUrl": "https://picsum.photos/id/50/600"
+    "title": "Remera Tiras",
+    "thumbnailUrl": "https://i.pinimg.com/564x/87/4e/8c/874e8c4946e78f5491518198cd5bf90f.jpg"
   }
 ]
