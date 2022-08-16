@@ -1,3 +1,5 @@
+
+
 const cards = document.getElementById('cards')
 const items = document.getElementById('items')
 const footer = document.getElementById('footer')
@@ -9,8 +11,32 @@ let carrito = {}
 
 // Eventos
 document.addEventListener('DOMContentLoaded', e => { fetchData() });
-cards.addEventListener('click', e => { addCarrito(e) });
-items.addEventListener('click', e => { btnAumentarDisminuir(e) })
+cards.addEventListener('click', e => { 
+    
+
+    Swal.fire({
+        title: 'Are you sure?',
+        text: "You won't be able to revert this!",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Yes, delete it!'
+      }).then((result) => {
+        if (result.isConfirmed) { addCarrito(e) 
+          Swal.fire(
+            'Deleted!',
+            'Your file has been deleted.',
+            'success'
+          )
+        }
+      })
+
+});
+items.addEventListener('click', e => {
+     btnAumentarDisminuir(e) 
+
+    });
 
 // Traer productos
 const fetchData = async () => {
