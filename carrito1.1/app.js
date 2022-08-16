@@ -11,25 +11,15 @@ let carrito = {}
 
 // Eventos
 document.addEventListener('DOMContentLoaded', e => { fetchData() });
-cards.addEventListener('click', e => { 
+cards.addEventListener('click', e => { addCarrito(e) 
     
 
     Swal.fire({
-        title: 'Are you sure?',
-        text: "You won't be able to revert this!",
-        icon: 'warning',
-        showCancelButton: true,
-        confirmButtonColor: '#3085d6',
-        cancelButtonColor: '#d33',
-        confirmButtonText: 'Yes, delete it!'
-      }).then((result) => {
-        if (result.isConfirmed) { addCarrito(e) 
-          Swal.fire(
-            'Deleted!',
-            'Your file has been deleted.',
-            'success'
-          )
-        }
+        position: 'center-end',
+        icon: 'success',
+        title: 'Agregado Correctamente',
+        showConfirmButton: false,
+        timer: 1500
       })
 
 });
@@ -135,13 +125,15 @@ const pintarFooter = () => {
     boton.addEventListener('click', () => { 
         
         Swal.fire({
-            title: 'Are you sure?',
-            text: "You won't be able to revert this!",
+            title: 'Desea Borrar Su carrito?',
+            
             icon: 'warning',
             showCancelButton: true,
+            cancelButtonText: 'Cancelar',
             confirmButtonColor: '#3085d6',
             cancelButtonColor: '#d33',
-            confirmButtonText: 'Yes, delete it!'
+            cancelButtonAriaLabel: 'Thumbs down',
+            confirmButtonText: 'Vaciar Carrito!'
           }).then((result) => {
             if (result.isConfirmed) { 
                 
@@ -150,9 +142,9 @@ const pintarFooter = () => {
             pintarCarrito()
 
               Swal.fire(
-                'Deleted!',
-                'Your file has been deleted.',
-                'success'
+                'Confirmado',
+                'Ha vaciado su carrtio correctamente',
+                'Realizado'
               )
             }
           })
