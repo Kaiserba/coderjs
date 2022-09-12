@@ -36,21 +36,39 @@
     "thumbnailUrl": "https://i.pinimg.com/564x/87/4e/8c/874e8c4946e78f5491518198cd5bf90f.jpg"
   },
   {
-    "precio": 5200,
+    "precio": 3200,
     "id": 6,
-    "title": "Remera Tiras",
-    "thumbnailUrl": "https://i.pinimg.com/564x/87/4e/8c/874e8c4946e78f5491518198cd5bf90f.jpg"
+    "title": "Remera 94",
+    "thumbnailUrl": "https://i.pinimg.com/564x/d8/4d/14/d84d14edad9729c5f4d216913b114d0e.jpg"
   },
   {
-    "precio": 5200,
+    "precio": 3100,
     "id": 6,
-    "title": "Remera Tiras",
-    "thumbnailUrl": "https://i.pinimg.com/564x/87/4e/8c/874e8c4946e78f5491518198cd5bf90f.jpg"
+    "title": "Remera Patagonia",
+    "thumbnailUrl": "https://i.pinimg.com/564x/eb/7a/fb/eb7afbae5ff553aa467b1ae75f881e5b.jpg"
   },
   {
-    "precio": 5200,
+    "precio": 9200,
     "id": 6,
-    "title": "Remera Tiras",
-    "thumbnailUrl": "https://i.pinimg.com/564x/87/4e/8c/874e8c4946e78f5491518198cd5bf90f.jpg"
+    "title": "Campera Basica",
+    "thumbnailUrl": "https://i.pinimg.com/564x/c4/81/dd/c481dd11b10ddb50362c7dcd23e441ce.jpg"
+  },
+  {
+    "precio": 1000,
+    "id": 6,
+    "title": "Campera street1",
+    "thumbnailUrl": "https://i.pinimg.com/564x/aa/ec/cd/aaeccd03d52b88fde332a3eed5e744d9.jpg"
+  },
+  {
+    "precio": 7200,
+    "id": 6,
+    "title": "Buzo Adidas",
+    "thumbnailUrl": "https://i.pinimg.com/564x/6c/c1/8d/6cc18d8dcbbac9b4789200aec2e70d9f.jpg"
+  },
+  {
+    "precio": 9500,
+    "id": 6,
+    "title": "Campera de Jean",
+    "thumbnailUrl": "https://i.pinimg.com/564x/a9/46/21/a94621b23a317ff6679d966a8f2e7df7.jpg"
   }
 ]
